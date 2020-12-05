@@ -1,0 +1,8 @@
+{
+    "ServerAddress": "localhost",
+    "ServerPort": "35107",
+    "Username": "Administrator",
+    "Password": "changeme",
+    "Domain": "HOSTNAME-OR-DOMAIN",
+    "ExporterPort": "13337"
+}
