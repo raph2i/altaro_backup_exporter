@@ -31,5 +31,26 @@ altaro_lastoffsitecopy_timestamp
 altaro_lastbackup_timestamp
 ```
 
+### Alert rules:
+
+```
+    - alert: Last Backup not successful
+      expr: altaro_lastbackup_result{altaro_lastbackup_result="Success"} != 1
+      for: 1m
+
+    - alert: Last OffSite Copy not successful
+      expr: altaro_lastoffsitecopy_result{altaro_lastoffsitecopy_result="Success"} != 1
+      for: 1m
+
+    - alert: Last Backup older than 30 hours
+      expr:  time() < 3600 * 30 - altaro_lastbackup_timestamp
+      for: 1m
+
+    - alert: Last OffSite Copy older than 30 hours
+      expr:  time() < 3600 * 30 - altaro_lastoffsitecopy_timestamp
+      for: 1m
+
+```
+
 ### License
 MIT // 2020 - Raphael Pertl
