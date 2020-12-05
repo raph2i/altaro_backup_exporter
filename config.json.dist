@@ -4,5 +4,5 @@
     "Username": "Administrator",
     "Password": "changeme",
     "Domain": "HOSTNAME-OR-DOMAIN",
-    "ExporterPort": "13337"
+    "ExporterPort": "9769"
 }

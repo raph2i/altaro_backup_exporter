@@ -10,7 +10,7 @@ nssm.exe install "altaro_backup_exporter" "C:\prometheus\altaro_backup_exporter\
 ### Configure
 change the settings in config.json to your needs
 
-Port is 13337, until we get an official portnumber
+The default exporter-port is 9769.
 
 
 ### Metrics
